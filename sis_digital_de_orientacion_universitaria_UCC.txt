@@ -1,4 +1,5 @@
 PROYECTO DE INGENIERÍA DE SOFTWARE
+Elaborado por: Valeria Hererra y Natalia Charris
 
 SISTEMA DIGITAL DE ORIENTACIÓN UNIVERSITARIA
 Propuesta integral: navegación interactiva para estudiantes de primer semestre
@@ -86,36 +87,6 @@ Los requisitos del Sistema Digital de Orientación Universitaria permiten establ
 | RF-12  | Mensajes al usuario       | Informa cuando un lugar no existe, faltan datos o no hay     | Alta      |
 |        |                           | una ruta disponible.                                         |           |
 +--------+---------------------------+--------------------------------------------------------------+-----------+
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 5.2. Requisitos no funcionales
 
