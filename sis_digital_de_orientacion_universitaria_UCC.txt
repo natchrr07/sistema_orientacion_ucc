@@ -1,0 +1,265 @@
+PROYECTO DE INGENIERÍA DE SOFTWARE
+
+SISTEMA DIGITAL DE ORIENTACIÓN UNIVERSITARIA
+Propuesta integral: navegación interactiva para estudiantes de primer semestre
+
+
+1. DESCRIPCIÓN DE LA PROBLEMÁTICA
+
+El ingreso a la educación superior implica adaptarse a nuevos espacios, rutinas y procesos. En universidades con campus extensos o múltiples edificios, los estudiantes que ingresan por primera vez pueden tener dificultades para identificar la ubicación de sus salones, laboratorios, dependencias administrativas y servicios. Cuando no cuentan con una herramienta de orientación clara, pueden depender de indicaciones de terceros, invertir tiempo adicional en encontrar un lugar o llegar tarde a sus actividades.
+
+La magnitud y frecuencia de esta situación deben verificarse mediante encuestas, entrevistas u observación. La problemática inicial se formula, por tanto, como una necesidad que debe investigarse y no como una conclusión estadística ya demostrada.
+
+
+2. FORMULACIÓN DEL PROBLEMA
+
+¿Cómo puede una plataforma digital de orientación y navegación contribuir a facilitar la localización de espacios y el desplazamiento autónomo de los estudiantes de primer semestre dentro de universidades multicampus?
+
+
+3. PROPUESTA DE SOLUCIÓN
+
+Desarrollar una plataforma de navegación universitaria que permita seleccionar una sede, consultar su mapa, buscar un destino y visualizar una ruta para llegar. La experiencia ideal combinaría una representación visual del campus con indicaciones sencillas y datos actualizados sobre los espacios.
+
+3.1. Funcionalidades principales
+
+- Mapa interactivo y vista 3D: visualizar edificios, entradas, pisos, pasillos y puntos de interés. La vista 3D es una opción de interfaz; no sustituye la información cartográfica necesaria para calcular rutas.
+- Buscador de lugares: buscar salones por código, facultades, laboratorios, biblioteca, cafetería, baños y oficinas de atención.
+- Selección de origen y destino: permitir que el usuario indique dónde se encuentra o seleccione un punto conocido, y el lugar al que necesita llegar.
+- Generación de rutas: calcular y mostrar un trayecto viable mediante una red digital de caminos, accesos, escaleras, ascensores y conexiones entre edificios.
+- Modo “¿Dónde tengo clase?”: facilitar la búsqueda de un salón a partir de su código o de la próxima clase, si se dispone de la información académica necesaria.
+- Información por sede: mostrar los servicios y espacios correspondientes al campus seleccionado.
+- Rutas accesibles: en una fase posterior, ofrecer recorridos que eviten escaleras o barreras conocidas, cuando los datos de accesibilidad estén disponibles y verificados.
+- Consulta básica sin conexión: como mejora futura, permitir consultar un plano y datos previamente descargados cuando no haya conexión estable.
+
+
+4. USUARIOS Y ALCANCE INICIAL
+
+Usuario principal: estudiantes de primer semestre que aún no conocen bien la distribución física del campus.
+
+Usuarios secundarios: estudiantes de otros semestres, visitantes y personal que necesite ubicar espacios.
+
+Alcance recomendado para la primera versión (MVP): trabajar con una sola sede; registrar sus espacios principales; crear un plano digital navegable; permitir la búsqueda de un destino; seleccionar manualmente un punto de origen o usar códigos QR instalados en puntos conocidos; y generar una ruta básica. La incorporación de múltiples sedes y la detección automática de ubicación se pueden abordar después de validar el prototipo.
+
+
+5. REQUISITOS DEL SISTEMA
+
+Los requisitos del Sistema Digital de Orientación Universitaria permiten establecer las funcionalidades que deberá ofrecer la plataforma y las condiciones de calidad que deberá cumplir para responder a las necesidades de los estudiantes. Se dividen en requisitos funcionales, relacionados con las acciones y servicios del sistema, y requisitos no funcionales, que determinan aspectos como la usabilidad, el rendimiento, la seguridad, la compatibilidad y la accesibilidad.
+
+5.1. Requisitos funcionales
+6.1. REQUISITOS FUNCIONALES
+
++--------+---------------------------+--------------------------------------------------------------+-----------+
+| Codigo | Requisito funcional       | Descripcion                                                  | Prioridad |
++--------+---------------------------+--------------------------------------------------------------+-----------+
+| RF-01  | Seleccion de sede         | Permite seleccionar la sede universitaria que se desea       | Alta      |
+|        |                           | consultar.                                                   |           |
++--------+---------------------------+--------------------------------------------------------------+-----------+
+| RF-02  | Visualizacion del mapa    | Muestra el plano digital de la sede con edificios y puntos   | Alta      |
+|        |                           | de interes registrados.                                      |           |
++--------+---------------------------+--------------------------------------------------------------+-----------+
+| RF-03  | Busqueda de lugares       | Permite buscar salones, laboratorios, bibliotecas, cafeterias| Alta      |
+|        |                           | banos y dependencias administrativas por nombre o codigo.    |           |
++--------+---------------------------+--------------------------------------------------------------+-----------+
+| RF-04  | Seleccion del origen      | Permite establecer manualmente el punto de partida o         | Alta      |
+|        |                           | identificarlo mediante un codigo QR.                         |           |
++--------+---------------------------+--------------------------------------------------------------+-----------+
+| RF-05  | Seleccion del destino     | Permite elegir el destino mediante el buscador o el mapa.    | Alta      |
++--------+---------------------------+--------------------------------------------------------------+-----------+
+| RF-06  | Generacion de rutas       | Calcula una ruta entre el origen y el destino utilizando     | Alta      |
+|        |                           | caminos y conexiones transitables del mapa.                  |           |
++--------+---------------------------+--------------------------------------------------------------+-----------+
+| RF-07  | Visualizacion del         | Representa graficamente la ruta calculada y la diferencia    | Alta      |
+|        | recorrido                 | de los demas elementos del mapa.                             |           |
++--------+---------------------------+--------------------------------------------------------------+-----------+
+| RF-08  | Indicaciones de           | Proporciona indicaciones comprensibles sobre giros y puntos  | Media     |
+|        | navegacion                | de referencia del recorrido.                                 |           |
++--------+---------------------------+--------------------------------------------------------------+-----------+
+| RF-09  | Informacion de los        | Muestra el nombre, tipo de servicio, edificio y piso de los  | Media     |
+|        | lugares                   | espacios registrados, cuando corresponda.                   |            |
++--------+---------------------------+--------------------------------------------------------------+-----------+
+| RF-10  | Gestion de la informacion | Permite que un usuario autorizado actualice los espacios,   | Media      |
+|        |                           | codigos de ubicacion y conexiones del mapa.                 |            |
++--------+---------------------------+--------------------------------------------------------------+-----------+
+| RF-11  | Validacion de rutas       | Comprueba que el origen y el destino existan y que haya una  | Alta      |
+|        |                           | ruta disponible antes de mostrar el recorrido.               |           |
++--------+---------------------------+--------------------------------------------------------------+-----------+
+| RF-12  | Mensajes al usuario       | Informa cuando un lugar no existe, faltan datos o no hay     | Alta      |
+|        |                           | una ruta disponible.                                         |           |
++--------+---------------------------+--------------------------------------------------------------+-----------+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5.2. Requisitos no funcionales
+
+6.2. REQUISITOS NO FUNCIONALES
+
++---------+-----------------------+-----------------------------------------------+----------------------------------------------+
+| Codigo  | Requisito             | Descripcion                                   | Criterio de verificacion propuesto           |
++---------+-----------------------+-----------------------------------------------+----------------------------------------------+
+| RNF-01  | Usabilidad            | La interfaz debe ser intuitiva y facil de     | Al menos el 80 % de los participantes debe   |
+|         |                       | utilizar sin conocimientos tecnicos.          | completar una busqueda sin ayuda.            |
++---------+-----------------------+-----------------------------------------------+----------------------------------------------+
+| RNF-02  | Rendimiento           | Las busquedas y el calculo de rutas deben     | Completar las operaciones en maximo 3        |
+|         |                       | responder en un tiempo razonable.             | segundos en al menos el 95 % de los intentos.|
++---------+-----------------------+-----------------------------------------------+----------------------------------------------+
+| RNF-03  | Compatibilidad        | Debe funcionar en los navegadores y            | Probar las funciones principales en los     |
+|         |                       | dispositivos definidos para el proyecto.      | navegadores y pantallas seleccionados.       |
++---------+-----------------------+-----------------------------------------------+----------------------------------------------+
+| RNF-04  | Accesibilidad         | Debe ofrecer textos legibles, buen contraste  | Revisar criterios de accesibilidad y         |
+|         |                       | y controles comprensibles.                    | realizar pruebas con usuarios.               |
++---------+-----------------------+-----------------------------------------------+----------------------------------------------+
+| RNF-05  | Seguridad             | Debe proteger la administracion y evitar     | Comprobar que solo usuarios autorizados       |
+|         |                       | modificaciones no autorizadas.                | puedan realizar cambios administrativos.     |
++---------+-----------------------+-----------------------------------------------+----------------------------------------------+
+| RNF-06  | Privacidad            | Debe solicitar permisos de ubicacion solo    | Verificar que no solicite permisos            |
+|         |                       | cuando sean necesarios.                       | innecesarios ni almacene ubicacion sin razon.|
++---------+-----------------------+-----------------------------------------------+----------------------------------------------+
+| RNF-07  | Fiabilidad            | Las rutas deben corresponder a conexiones    | Comparar las rutas calculadas con recorridos  |
+|         |                       | existentes y verificadas en el campus.        | fisicos disponibles.                         |
++---------+-----------------------+-----------------------------------------------+----------------------------------------------+
+| RNF-08  | Mantenibilidad        | El software debe facilitar la correccion de  | Comprobar que actualizar un lugar no          |
+|         |                       | errores y la actualizacion de datos.          | requiera reconstruir todo el sistema.        |
++---------+-----------------------+-----------------------------------------------+----------------------------------------------+
+| RNF-09  | Adaptabilidad         | Debe permitir incorporar nuevos edificios y  | Verificar que se puedan registrar nuevos      |
+|         |                       | futuras sedes universitarias.                 | espacios y sedes en el modelo de datos.      |
++---------+-----------------------+-----------------------------------------------+----------------------------------------------+
+| RNF-10  | Disponibilidad        | Debe poder utilizarse cuando el servicio     | Realizar pruebas de acceso y registrar        |
+|         |                       | este desplegado y exista conexion requerida. | los errores de disponibilidad.                |
++---------+-----------------------+-----------------------------------------------+----------------------------------------------+
+| RNF-11  | Precision cartografica| El mapa debe representar adecuadamente       | Verificar los datos mediante inspeccion       |
+|         |                       | puntos, caminos, accesos y conexiones reales.| del campus y planos disponibles.              |
++---------+-----------------------+-----------------------------------------------+----------------------------------------------+
+| RNF-12  | Eficiencia de recursos| Debe evitar cargas innecesarias que afecten  | Probar los tiempos de carga en los            |
+|         |                       | el rendimiento de dispositivos limitados.     | dispositivos seleccionados.                  |
++---------+-----------------------+-----------------------------------------------+----------------------------------------------+
+
+
+
+5.3. Alcance de los requisitos para el prototipo inicial
+
+Para mantener el proyecto viable y facilitar su desarrollo progresivo, se priorizarán la visualización del mapa 2D, la búsqueda de lugares, la selección manual del origen y del destino, la generación de rutas y la presentación de indicaciones básicas.
+
+El posicionamiento mediante códigos QR, la administración de la información, las instrucciones por audio y la incorporación de nuevas sedes se desarrollarán según los recursos disponibles y las necesidades identificadas durante la validación. La visualización 3D, las rutas accesibles con información verificada y la consulta sin conexión se considerarán mejoras posteriores.
+
+Esta priorización permitirá comprobar primero el funcionamiento de la navegación y la utilidad del sistema antes de invertir tiempo en tecnologías más complejas.
+
+
+6. FUNCIONAMIENTO GENERAL
+
+1. Selección del campus: el usuario elige la universidad y la sede en la que se encuentra.
+2. Identificación del origen: la plataforma obtiene una estimación de ubicación mediante una tecnología disponible o permite elegir un punto conocido. Un código QR puede servir como alternativa inicial.
+3. Selección del destino: el usuario busca un salón, edificio o servicio.
+4. Cálculo de la ruta: el sistema calcula un recorrido con base en un mapa de espacios transitables y conexiones entre ellos.
+5. Visualización y seguimiento: la interfaz presenta el trayecto y las indicaciones hasta el destino. Si el posicionamiento automático no está disponible, el sistema debe explicitar sus limitaciones.
+
+
+7. CONSIDERACIONES TÉCNICAS
+
+Un mapa tridimensional no detecta por sí solo la posición real del usuario. La ubicación y el cálculo de rutas son componentes distintos que deben integrarse.
+
+- GPS: puede ser útil en exteriores, pero suele tener precisión limitada dentro de edificios.
+- Wi-Fi o Bluetooth Low Energy (BLE): podrían apoyar el posicionamiento interior, aunque requieren evaluación técnica y, según el diseño, infraestructura adicional.
+- Códigos QR: alternativa inicial de bajo costo; al escanear un código ubicado en un punto conocido, se establece el origen aproximado.
+- Plano y grafo de navegación: los espacios transitables pueden representarse como nodos y conexiones; un algoritmo de caminos mínimos puede calcular una ruta.
+- Interfaz web o aplicación: la elección depende de los recursos, la facilidad de acceso, la compatibilidad con dispositivos y los requisitos del curso.
+- Privacidad: solicitar permisos de ubicación de forma clara, explicar para qué se usan y evitar almacenar datos personales o trayectorias si no son necesarios.
+
+
+8. OBJETIVOS
+
+8.1. Objetivo general
+
+Desarrollar una plataforma digital de orientación y navegación universitaria que facilite la localización de espacios físicos y el desplazamiento autónomo de los estudiantes de primer semestre en universidades multicampus, mediante mapas interactivos y herramientas de localización y generación de rutas.
+
+8.2. Objetivos específicos
+
+- Identificar las dificultades de orientación espacial que experimentan los estudiantes nuevos mediante encuestas, entrevistas u observación.
+- Diseñar una representación digital de los espacios relevantes de la sede piloto, incluyendo edificios, pisos y puntos de interés.
+- Implementar la búsqueda de destinos y la generación de rutas a partir de la estructura digital del campus.
+- Construir un prototipo usable en el que el estudiante pueda consultar un destino y seguir una ruta.
+- Evaluar el prototipo con estudiantes, midiendo facilidad de uso, éxito al encontrar el destino y tiempo empleado.
+
+
+9. VALIDACIÓN DE LA PROBLEMÁTICA
+
+Antes de afirmar que la dificultad afecta a la mayoría de los estudiantes, se recomienda realizar una encuesta breve o entrevistas a estudiantes de primer semestre. Algunas preguntas útiles son:
+
+- ¿Te ha resultado difícil encontrar un salón o dependencia dentro de la universidad?
+- ¿Qué lugares te cuesta más ubicar?
+- ¿Con qué frecuencia debes pedir indicaciones a otra persona?
+- ¿Qué haces actualmente cuando no sabes llegar a un lugar?
+- ¿Usarías una plataforma que muestre el plano y te indique cómo llegar a tu destino?
+
+Los resultados permitirán describir la necesidad con evidencia y priorizar las funciones que más valor aporten.
+
+
+10. PLAN DE DESARROLLO POR FASES
+
+Fase 1. Investigación
+Realizar encuestas y entrevistas, revisar los planos disponibles y seleccionar el campus piloto.
+
+Fase 2. Requisitos y diseño
+Definir los usuarios, los requisitos funcionales y no funcionales, los flujos de uso y el diseño de la interfaz.
+
+Fase 3. Prototipo básico
+Implementar el plano, la búsqueda de lugares, la selección de origen y destino y una ruta básica.
+
+Fase 4. Ubicación
+Probar una alternativa de posicionamiento: códigos QR en el prototipo inicial o tecnologías de ubicación interior si hay recursos.
+
+Fase 5. Pruebas
+Realizar pruebas con estudiantes, registrar problemas y medir resultados.
+
+Fase 6. Mejoras
+Priorizar la accesibilidad, la información por sede, el uso sin conexión y la expansión a otros campus.
+
+
+11. INDICADORES DE EVALUACIÓN
+
+- Porcentaje de participantes que logra encontrar el destino asignado.
+- Tiempo promedio para completar una ruta, comparado con el método habitual.
+- Cantidad de errores o solicitudes de ayuda durante la navegación.
+- Valoración de facilidad de uso por parte de los participantes.
+- Porcentaje de rutas calculadas que son correctas y transitables según la verificación del campus.
+
+
+12. RIESGOS Y LÍMITES
+
+- No contar con planos actualizados o con permiso para utilizarlos.
+- La ubicación interior puede requerir sensores, balizas, configuración o pruebas adicionales.
+- Un modelo 3D detallado puede elevar el tiempo de desarrollo; se puede comenzar con un plano 2D o una vista 3D simplificada.
+- Las rutas deben reflejar accesos reales y no dirigir a los usuarios por áreas restringidas.
+- Los datos de salones y servicios cambian; se necesita un mecanismo para mantener la información actualizada.
+
+
+13. RESULTADO ESPERADO
+
+Se espera obtener un prototipo que ayude a los estudiantes nuevos a localizar espacios y comprender cómo llegar a ellos dentro de una sede universitaria. Su efectividad deberá determinarse mediante pruebas con usuarios. A largo plazo, la arquitectura podría adaptarse a distintas sedes, siempre que cada una cuente con un mapa y datos de navegación adecuados.
